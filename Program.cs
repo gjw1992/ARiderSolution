@@ -11,20 +11,24 @@ namespace ConsoleProject
             Console.WriteLine($"And show this once more {couldBeAnInt}");
             var oneSomeDataEntity=new SomeDataEntity(23);
             Console.WriteLine( oneSomeDataEntity.Info);
+            oneSomeDataEntity=new SomeDataEntity();
+            Console.WriteLine( oneSomeDataEntity.Info);
         }
     }
 
     class SomeDataEntity
     {
 
+        public SomeDataEntity()
+        {
+        }
         public SomeDataEntity(int anyCount)
         {
             this.AnyCount = anyCount;
-            this.creationDateTime = DateTime.Now;
         }
 
-        private DateTime creationDateTime;
-        public int AnyCount { get; }
+        private DateTime creationDateTime=DateTime.Now;
+        public int AnyCount { get; } = -1;
         public string Info => $"{this.GetType().ToString()} Created: {this.creationDateTime} AnyCount: {this.AnyCount}";
     }
 }
