@@ -13,6 +13,10 @@ namespace ConsoleProject
             Console.WriteLine( oneSomeDataEntity.Info);
             oneSomeDataEntity=new SomeDataEntity();
             Console.WriteLine( oneSomeDataEntity.Info);
+
+            (string name, int quantity, double pricePerItem) listItem = ("bread flour", 2, 0.99);
+            Console.WriteLine($@"name:{listItem.name}  qty:{listItem.quantity} total: £{listItem.quantity * listItem.pricePerItem}");
+            
         }
     }
 
