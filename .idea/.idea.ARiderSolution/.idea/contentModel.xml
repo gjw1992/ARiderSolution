@@ -3,6 +3,7 @@
   <component name="ContentModelStore">
     <e p="C:\Users\gjw19\.Rider2018.1\system\resharper-host\Local\Transient\ReSharperHost\v12\SolutionCaches\_ARiderSolution.-1392552242.00" t="ExcludeRecursive" />
     <e p="D:\gjw19\Rider\ARiderSolution" t="IncludeRecursive">
+      <e p=".gitignore" t="Include" />
       <e p="ARiderSolution.sln" t="IncludeFlat" />
       <e p="bin" t="ExcludeRecursive" />
       <e p="ConsoleProject.csproj" t="IncludeRecursive" />

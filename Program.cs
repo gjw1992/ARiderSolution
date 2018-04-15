@@ -6,7 +6,8 @@ namespace ConsoleProject
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello Gary!");
+            var couldBeAnInt = 93;
+            Console.WriteLine($"Hello Gary! {couldBeAnInt}");
         }
     }
 }
