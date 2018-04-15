@@ -9,19 +9,23 @@ namespace ConsoleProject
             var couldBeAnInt = 93;
             Console.WriteLine($"Hello Gary! {couldBeAnInt}");
             Console.WriteLine($"And show this once more {couldBeAnInt}");
-            Console.WriteLine( (new SomeDataEntity()).Info);
+            var oneSomeDataEntity=new SomeDataEntity(23);
+            Console.WriteLine( oneSomeDataEntity.Info);
         }
     }
 
     class SomeDataEntity
     {
-        private DateTime creationDateTime;
-        public SomeDataEntity()
+
+        public SomeDataEntity(int anyCount)
         {
+            this.AnyCount = anyCount;
             this.creationDateTime = DateTime.Now;
         }
 
-        public string Info => $"{this.GetType().ToString()} Created: {this.creationDateTime}";
+        private DateTime creationDateTime;
+        public int AnyCount { get; }
+        public string Info => $"{this.GetType().ToString()} Created: {this.creationDateTime} AnyCount: {this.AnyCount}";
     }
 }
 
