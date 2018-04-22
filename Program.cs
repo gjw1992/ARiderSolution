@@ -39,7 +39,7 @@ namespace ConsoleProject
 
         public string Version => this.buildTime();
 
-        private readonly bool monica = false;
+        private readonly bool monica = true;
     }
 }
 
