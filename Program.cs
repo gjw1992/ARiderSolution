@@ -35,7 +35,7 @@ namespace ConsoleProject
 
         private DateTime creationDateTime;
         public int AnyCount { get; }
-        public string Info => $"{this.GetType().ToString()} Created: {this.creationDateTime} AnyCount: {this.AnyCount}";
+        public string Info => $"{this.GetType().ToString()} Created: {this.creationDateTime} AnyCount: {this.AnyCount}  {this.buildTime()}";
 
         public string Version => this.buildTime();
     }
