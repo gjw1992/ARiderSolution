@@ -38,6 +38,8 @@ namespace ConsoleProject
         public string Info => $"{this.GetType().ToString()} Created: {this.creationDateTime} AnyCount: {this.AnyCount}  {this.buildTime()}";
 
         public string Version => this.buildTime();
+
+        private readonly bool monica = false;
     }
 }
 
