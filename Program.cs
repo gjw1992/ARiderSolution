@@ -14,6 +14,10 @@ namespace ConsoleProject
             var oneSomeDataEntity=new SomeDataEntity(23);
             Console.WriteLine(oneSomeDataEntity.Info);
             Console.WriteLine(oneSomeDataEntity.Version);
+
+            //tack on a tuple
+            (int idx, string descr, double amount) aNamedTuple = (12, "Well, easier when you know how", 234.12);
+            System.Console.WriteLine($"tuple v1={aNamedTuple.idx} v2={aNamedTuple.descr} v3={aNamedTuple.amount}");
         }
     }
 
