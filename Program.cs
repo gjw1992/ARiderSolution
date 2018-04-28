@@ -17,8 +17,18 @@ namespace ConsoleProject
 
             //tack on a tuple
             (int idx, string descr, double amount) aNamedTuple = (12, "Well, easier when you know how", 234.12);
+
             System.Console.WriteLine($"tuple v1={aNamedTuple.idx} v2={aNamedTuple.descr} v3={aNamedTuple.amount}");
+            var aCopy = aNamedTuple;
+            aCopy.amount = 2 * aCopy.amount;
+            System.Console.WriteLine($"tuple orig v3={aNamedTuple.amount}  copy v3={aCopy.amount}");
+
         }
+
+        //public static var TupleX(var inP)
+        //{
+        //    return inP.amount * 10;
+        //}
     }
 
     class SomeDataEntity
